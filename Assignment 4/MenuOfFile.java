@@ -31,7 +31,7 @@ public class MenuOfFile {
 				case 1:
 					Random r = new Random();
 					for (int i = 0; i < 10; i++) {
-						n= r.nextInt(20);
+						n= r.nextInt(90);
 						num+=n+" ";
 						System.out.print(n + " ");
 					}
@@ -52,7 +52,7 @@ public class MenuOfFile {
 				
 					break;
 				case 4:
-					break;
+					System.exit(0);
 				}//switch
 			} while (choice != 4);
 		} catch (Exception e) {
