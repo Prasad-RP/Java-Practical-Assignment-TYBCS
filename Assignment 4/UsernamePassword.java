@@ -1,5 +1,8 @@
 /* SET B
-b) Define class EmailId with members ,username and password. Define default and parameterized constructors. Accept values from the command line Throw user defined exceptions – "InvalidUsernameException" or "InvalidPasswordException" if the username and password are invalid.
+b) Define class EmailId with members ,username and password.
+ Define default and parameterized constructors
+. Accept values from the command line Throw user defined exceptions 
+ "InvalidUsernameException" or "InvalidPasswordException" if the username and password are invalid.
  */
 class InvalidUsernameException extends Exception {
     String msg = "Invalid Username....\nTry Again\n";
@@ -22,8 +25,8 @@ class EmailId {
     String password;
 
     EmailId() {
-        username = "dsk";
-        password = "dsk@123";
+        username = "Varient";
+        password = "Loki@45";
     }
 
     EmailId(String u, String p) {
