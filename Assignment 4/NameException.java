@@ -1,6 +1,9 @@
 
 /*Set C
-b) Write a java program to accept Employee name from the user and check whether it is valid or not. If it is not valid then throw user defined Exception "Name is Invalid" otherwise display it.(Name should contain only characters)
+b) Write a java program to accept Employee name from
+ the user and check whether it is valid or not. 
+If it is not valid then throw user defined Exception "Name is Invalid" otherwise display it.
+(Name should contain only characters)
 */
 import java.util.Scanner;
 
