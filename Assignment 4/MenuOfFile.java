@@ -30,6 +30,7 @@ public class MenuOfFile {
 				switch (choice) {
 				case 1:
 					Random r = new Random();
+                                        System.out.println("\nGenerated Random Numbers\n");
 					for (int i = 0; i < 10; i++) {
 						n= r.nextInt(90);
 						num+=n+" ";
@@ -37,7 +38,8 @@ public class MenuOfFile {
 					}
 					break;
 				case 2:
-				byte b[ ] =num.getBytes();						fout.write(b);
+				        byte b[ ] =num.getBytes();
+					fout.write(b);
 					System.out.println("\n\tFile Content Saved");
 					fout.close();
 					break;
