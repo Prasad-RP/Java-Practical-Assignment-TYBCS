@@ -7,7 +7,7 @@ If it is not valid then throw user defined Exception "Name is Invalid" otherwise
 */
 import java.util.Scanner;
 
-class NameisInvalid extends Exception {
+class InvalidNameException extends Exception {
 	String msg = "\nInvalidName\n";
 
 	public String toString() {
@@ -37,11 +37,11 @@ public class NameException {
 				if ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122)) {
 
 				} else {
-					throw new NameisInvalid();
+					throw new InvalidNameException();
 				}
 			}
 			System.out.println("\nName:-" + name + "\n");
-		} catch (NameisInvalid e) {
+		} catch (InvalidNameException e) {
 			System.out.println(e);
 		}
 
