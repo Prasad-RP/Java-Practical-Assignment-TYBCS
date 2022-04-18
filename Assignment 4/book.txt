@@ -1,3 +1,0 @@
-Book name:  java
-Author: dept of computer science
-	

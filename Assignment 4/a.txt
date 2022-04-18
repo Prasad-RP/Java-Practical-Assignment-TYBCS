@@ -1,3 +1,0 @@
-hello this is a java file.
-contain contents for file
-handling program
