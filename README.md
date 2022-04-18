@@ -1,2 +1,0 @@
-# Java-Practical-Assignment-TYBCS
-
