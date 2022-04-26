@@ -1,13 +1,12 @@
-// SET C
-//b) Create the following tables and relations, for an INVESTMENT firm EMP(empid
-// ,empname, empaddress, empcontact, empage) INVESTOR(invno, invname , invdate,
-// invamt) An employee may invest in one or more investments, hence he can be an
-// investor. But an investor need not be an employee of the firm. Insert sufficient
-// number of records in the relations / tables with appropriate values.
-// i. Display the List the distinct names of person who are either employees, or
-// investors or both.
-// ii. List the names of employees who are not investors
-
+/* SET C
+b) Create the following tables and relations, for an INVESTMENT firm EMP(empid
+empname, empaddress, empcontact, empage) INVESTOR(invno, invname , invdate,
+ invamt) An employee may invest in one or more investments, hence he can be an
+ investor. But an investor need not be an employee of the firm. Insert sufficient
+ number of records in the relations / tables with appropriate values.
+ i. Display the List the distinct names of person who are either employees, orinvestors or both.
+ ii. List the names of employees who are not investors
+*/
 import java.sql.*;
 
 public class SETC2 {
@@ -31,13 +30,13 @@ public class SETC2 {
 
             System.out.println("names of person who are either employees or investors or both");
             while (rs.next()) {
-                System.out.println(rs.getString("empname") + "\t" + rs.getString("invname"));
+                System.out.println(rs.getString("empname"));
             } // while
 
             // names of employees who are not investors
             System.out.println("names of employees who are not investors");
             
-            rs = stmt.executeQuery("select empname from emp minus select invname from investor");
+            rs = stmt.executeQuery("select empname from emp except select invname from investor");
             while (rs.next()) {
                 System.out.println(rs.getString("empname"));
             } // while
