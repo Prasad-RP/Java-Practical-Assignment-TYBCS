@@ -13,9 +13,11 @@
                  %>
                 <table border="1" width="40%">
                     <tr>
-                        <td>Hospital No</td>
+                        <td>Patient No</td>
                         <td>Name</td>
-                        <td>Address</td>
+                        <td>Age</td>
+                        <td>Address</td
+                        <td>Diease</td>
                     </tr>
                     <% while(rs.next()) { %>
                         <tr>
